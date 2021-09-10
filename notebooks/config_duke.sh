@@ -1,6 +1,6 @@
 ### Check which duke server I am at
 ### set correct path based on the server I am at
-if echo $(pwd) | grep -q "gpfs"; then
+if echo $(pwd -P) | grep -q "gpfs"; then
     SERVER=HARDAC
     NODE=all
     
@@ -12,7 +12,7 @@ if echo $(pwd) | grep -q "gpfs"; then
     
 fi
 
-if echo $(pwd) | grep -q "hpc"; then
+if echo $(pwd -P) | grep -q "hpc"; then
     SERVER=DCC
     NODE=scavenger
     
