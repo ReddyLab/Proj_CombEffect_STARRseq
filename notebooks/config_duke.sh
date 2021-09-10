@@ -36,6 +36,8 @@ FD_LOG=${FD_RES}/log
 
 ### get flag ptions
 ### https://stackoverflow.com/questions/7069682/how-to-get-arguments-with-flags-in-bash
+### https://stackoverflow.com/questions/16483119/an-example-of-how-to-use-getopts-in-bash
+print_usage() { printf "Usage: hello"; }
 VERBOSE='false'
 while getopts 'v' flag; do
   case "${flag}" in
