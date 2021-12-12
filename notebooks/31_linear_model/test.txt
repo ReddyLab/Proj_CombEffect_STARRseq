@@ -1,0 +1,15 @@
+You are on Duke Server: HARDAC
+BASE DIRECTORY:     /gpfs/fs1/data/reddylab/Kuei
+PATH OF SOURCE:     /gpfs/fs1/data/reddylab/Kuei/source
+PATH OF EXECUTABLE: /gpfs/fs1/data/reddylab/Kuei/exe
+PATH OF ANNOTATION: /gpfs/fs1/data/reddylab/Kuei/annotation
+PATH OF PROJECT:    /gpfs/fs1/data/reddylab/Kuei/GitRepo/Proj_CombEffect_STARRseq/notebooks
+PATH OF RESULTS:    /gpfs/fs1/data/reddylab/Kuei/out/proj_combeffect
+
+Slurm Array Index: 
+Time Stamp:         10-18-21+12:55:58
+
+[1] "hello"
+
+Done!
+Run Time: 3 seconds

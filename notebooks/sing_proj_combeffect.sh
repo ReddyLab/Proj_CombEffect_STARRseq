@@ -20,4 +20,4 @@ singularity exec \
     -B ${FD_RLAB}:/home/mount/reddylab \
     ${FD_SING}/singularity_proj_combeffect.sif "$@"
     
-rm -rf ${PWD}/mount
+#rm -rf ${PWD}/mount
