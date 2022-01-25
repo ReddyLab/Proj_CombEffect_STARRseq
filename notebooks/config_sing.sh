@@ -9,7 +9,7 @@ FD_EXE=${FD_WORK}/exe
 FD_ANN=${FD_WORK}/annotation
 
 ### set project related paths
-FD_RES=${FD_WORK}/out/CombEffect_STARR
+FD_RES=${FD_WORK}/out/proj_combeffect
 FD_LOG=${FD_RES}/log
 
 ### get flag ptions

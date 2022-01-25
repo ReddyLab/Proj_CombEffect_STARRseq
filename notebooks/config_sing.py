@@ -1,12 +1,13 @@
 ### basic
-import gzip
 import numpy     as np
 import pandas    as pd
-import itertools as it
-import os, sys, time
-from glob     import glob
-from datetime import timedelta
-from collections import Counter
+import os, sys, gzip
+
+#import itertools as it
+#import os, sys, time
+#from glob     import glob
+#from datetime import timedelta
+#from collections import Counter
 
 ### set apths
 FD_WORK = "/home/mount/work"

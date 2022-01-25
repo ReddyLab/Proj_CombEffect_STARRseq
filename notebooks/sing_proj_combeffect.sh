@@ -13,6 +13,13 @@
 SCRIPT_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" &> /dev/null && pwd )"
 source ${SCRIPT_DIR}/config_duke.sh
 
+#singularity exec \
+#    -H ${PWD}:/home \
+#    -B ${FD_WORK}:/mount/work \
+#    -B ${FD_PRJ}:/mount/project \
+#    -B ${FD_RLAB}:/mount/reddylab \
+#    ${FD_SING}/singularity_proj_combeffect.sif "$@"
+
 singularity exec \
     -H ${PWD}:/home \
     -B ${FD_WORK}:/home/mount/work \

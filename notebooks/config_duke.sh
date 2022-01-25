@@ -10,6 +10,10 @@ if echo $(pwd -P) | grep -q "gpfs"; then
     FD_RLAB=${FD_PREFIX}/data/reddylab
     FD_SING=${FD_WORK}/singularity
     
+    ### set working paths
+    FD_ANN=${FD_WORK}/annotation
+    FD_SRC=${FD_WORK}/source
+    FD_EXE=${FD_WORK}/exe
 fi
 
 if echo $(pwd -P) | grep -q "hpc"; then
@@ -22,12 +26,16 @@ if echo $(pwd -P) | grep -q "hpc"; then
     FD_RLAB=${FD_PREFIX}/group/reddylab
     FD_SING=${FD_RLAB}/Kuei/singularity
     
+    ### set working paths
+    FD_ANN=${FD_RLAB}/Kuei/annotation
+    FD_SRC=${FD_RLAB}/Kuei/source
+    FD_EXE=${FD_RLAB}/Kuei/exe
 fi
 
 ### set working paths
-FD_SRC=${FD_WORK}/source
-FD_EXE=${FD_WORK}/exe
-FD_ANN=${FD_WORK}/annotation
+#FD_SRC=${FD_WORK}/source
+#FD_EXE=${FD_WORK}/exe
+#FD_ANN=${FD_WORK}/annotation
 
 ### set project related paths
 FD_PRJ=${FD_CODE}/Proj_CombEffect_STARRseq/notebooks
