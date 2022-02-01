@@ -28,9 +28,9 @@ FD_HOME=${FD_SING}/home
 ### Run jupyter lab
 singularity exec \
     -H ${FD_HOME}:/home \
-    -B ${FD_WORK}:/home/mount/work \
-    -B ${FD_PRJ}:/home/mount/project \
-    -B ${FD_RLAB}:/home/mount/reddylab \
+    -B ${FD_WORK}:/mount/work \
+    -B ${FD_PRJ}:/mount/project \
+    -B ${FD_RLAB}:/mount/reddylab \
     ${FD_SING}/singularity_proj_combeffect.sif \
     jupyter lab --NotebookApp.token="543@Psk" --no-browser --ip=0.0.0.0 --port=${N_PORT}
 

@@ -10,9 +10,9 @@ library("gridExtra")
 library("grid")
 
 ### set paths
-FD_WORK = "/home/mount/work"
-FD_RLAB = "/home/mount/reddylab"
-FD_PRJ  = "/home/mount/project"
+FD_WORK = "/mount/work"
+FD_RLAB = "/mount/reddylab"
+FD_PRJ  = "/mount/project"
 
 FD_SRC  = file.path(FD_WORK, "source")
 FD_EXE  = file.path(FD_WORK, "exe")
