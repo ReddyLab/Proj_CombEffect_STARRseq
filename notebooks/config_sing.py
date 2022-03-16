@@ -31,3 +31,4 @@ if True:
     print(f"PATH OF ANNOTATION: {FD_ANN}")
     print(f"PATH OF PROJECT:    {FD_PRJ}")
     print(f"PATH OF RESULTS:    {FD_RES}")
+    print()

@@ -20,11 +20,18 @@ source ${SCRIPT_DIR}/config_duke.sh
 #    -B ${FD_RLAB}:/mount/reddylab \
 #    ${FD_SING}/singularity_proj_combeffect.sif "$@"
 
+#singularity exec \
+#    -H ${PWD}:/home \
+#    -B ${FD_WORK}:/home/mount/work \
+#    -B ${FD_PRJ}:/home/mount/project \
+#    -B ${FD_RLAB}:/home/mount/reddylab \
+#    ${FD_SING}/singularity_proj_combeffect.sif "$@"
+ 
 singularity exec \
     -H ${PWD}:/home \
-    -B ${FD_WORK}:/home/mount/work \
-    -B ${FD_PRJ}:/home/mount/project \
-    -B ${FD_RLAB}:/home/mount/reddylab \
+    -B ${FD_WORK}:/mount/work \
+    -B ${FD_PRJ}:/mount/project \
+    -B ${FD_RLAB}:/mount/reddylab \
     ${FD_SING}/singularity_proj_combeffect.sif "$@"
     
 #rm -rf ${PWD}/mount

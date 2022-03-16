@@ -1,7 +1,7 @@
 ### set correct path based on the server I am at
-FD_WORK=/home/mount/work
-FD_RLAB=/home/mount/reddylab
-FD_PRJ=/home/mount/project
+FD_WORK=/mount/work
+FD_RLAB=/mount/reddylab
+FD_PRJ=/mount/project
 
 ### set working paths
 FD_SRC=${FD_WORK}/source
