@@ -32,12 +32,31 @@ if echo $(pwd -P) | grep -q "hpc"; then
     FD_EXE=${FD_RLAB}/Kuei/exe
 fi
 
+### set working paths
+#FD_SRC=${FD_WORK}/source
+#FD_EXE=${FD_WORK}/exe
+#FD_ANN=${FD_WORK}/annotation
+
 ### set project related paths
 FD_PRJ=${FD_CODE}/Proj_CombEffect_STARRseq/notebooks
 FD_RES=${FD_WORK}/out/proj_combeffect
 FD_LOG=${FD_RES}/log
 
-show_env() {
+### get flag ptions
+### https://stackoverflow.com/questions/7069682/how-to-get-arguments-with-flags-in-bash
+### https://stackoverflow.com/questions/16483119/an-example-of-how-to-use-getopts-in-bash
+print_usage() { printf "Usage: hello"; }
+VERBOSE='false'
+while getopts 'v' flag; do
+  case "${flag}" in
+    v) VERBOSE='true' ;;
+    *) print_usage
+       exit 1 ;;
+  esac
+done
+
+### if verbose, print server and path
+if ${VERBOSE}; then
     echo "You are on Duke Server: ${SERVER}"
     echo "BASE DIRECTORY:     ${FD_WORK}" 
     echo "PATH OF SOURCE:     ${FD_SRC}"
@@ -46,11 +65,7 @@ show_env() {
     echo "PATH OF PROJECT:    ${FD_PRJ}"
     echo "PATH OF RESULTS:    ${FD_RES}"
     echo
-}
-#fi
+fi
 
 ### load helper functions
 source ${FD_PRJ}/config_func.sh
-
-### container
-FP_SIF=${FD_SING}/singularity_proj_combeffect.sif

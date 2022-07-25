@@ -31,7 +31,6 @@ singularity exec \
     -B ${FD_WORK}:/mount/work \
     -B ${FD_PRJ}:/mount/project \
     -B ${FD_RLAB}:/mount/reddylab \
-    ${FD_SING}/singularity_proj_combeffect.sif \
+    ${FD_SING}/singularity_proj_combeffect_model.sif \
     jupyter lab --NotebookApp.token="543@Psk" --no-browser --ip=0.0.0.0 --port=${N_PORT}
 
- 

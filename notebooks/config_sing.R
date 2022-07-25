@@ -19,11 +19,17 @@ FD_EXE  = file.path(FD_WORK, "exe")
 FD_ANN  = file.path(FD_WORK, "annotation")
 FD_RES  = file.path(FD_WORK, "out", "proj_combeffect")
 
-cat("You are in singularity_proj_combeffect", "\n")
-cat("BASE DIRECTORY:    ", FD_WORK, "\n")
-cat("PATH OF SOURCE:    ", FD_SRC,  "\n")
-cat("PATH OF EXECUTABLE:", FD_EXE,  "\n")
-cat("PATH OF ANNOTATION:", FD_ANN,  "\n")
-cat("PATH OF PROJECT:   ", FD_PRJ,  "\n")
-cat("PATH OF RESULTS:   ", FD_RES,  "\n")
-cat("")
+SERVER = "Singularity: singularity_proj_combeffect"
+#SERVER = "Duke Server: DCC"
+#SERVER = "Duke Server: HARDAC"
+
+show_env = function(){
+    cat("You are in", SERVER, "\n")
+    cat("BASE DIRECTORY:    ", FD_WORK, "\n")
+    cat("PATH OF SOURCE:    ", FD_SRC,  "\n")
+    cat("PATH OF EXECUTABLE:", FD_EXE,  "\n")
+    cat("PATH OF ANNOTATION:", FD_ANN,  "\n")
+    cat("PATH OF PROJECT:   ", FD_PRJ,  "\n")
+    cat("PATH OF RESULTS:   ", FD_RES,  "\n")
+    cat("")
+}
