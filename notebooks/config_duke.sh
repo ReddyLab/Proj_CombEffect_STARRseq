@@ -14,6 +14,7 @@ if echo $(pwd -P) | grep -q "gpfs"; then
     FD_ANN=${FD_WORK}/annotation
     FD_SRC=${FD_WORK}/source
     FD_EXE=${FD_WORK}/exe
+    FD_BAC=${FD_WORK}/backup
 fi
 
 if echo $(pwd -P) | grep -q "hpc"; then
@@ -36,6 +37,7 @@ fi
 FD_PRJ=${FD_CODE}/Proj_CombEffect_STARRseq/notebooks
 FD_RES=${FD_WORK}/out/proj_combeffect
 FD_LOG=${FD_RES}/log
+FD_BIN=${FD_WORK}/bin
 
 show_env() {
     echo "You are on Duke Server: ${SERVER}"
